@@ -78,8 +78,8 @@ import {
 export const projectsData = [
   {
     id: 1,
-    title: "Villa",
-    description: "Settle In a Modern Villa With Your Family",
+    title: "Demo Project",
+    description: "Demo Project Demo Project Demo Project Demo Project Demo Project",
     image: image1,
     to: "/projects/villa",
   },
