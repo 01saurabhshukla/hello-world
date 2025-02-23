@@ -60,7 +60,7 @@ function ContactForm() {
               {formData.map((el) => (
                 <div key={el.id}>
                   <input
-                    className="border-none w-full outline-none p-[10px] bg-[#262626] placeholder:text-gray"
+                    className="border-none w-full outline-none p-[10px] placeholder:text-gray"
                     type={el.type}
                     name={el.name}
                     placeholder={el.placeholder}
@@ -73,7 +73,7 @@ function ContactForm() {
 
             <div className="my-[20px]">
               <textarea
-                className="border-none sm:w-[50%] w-full outline-none p-[10px] bg-[#262626] placeholder:text-gray resize-none h-[200px]"
+                className="border-none sm:w-[50%] w-full outline-none p-[10px] placeholder:text-gray resize-none h-[200px]"
                 placeholder="Message"
                 name="message"
                 value={values.message}

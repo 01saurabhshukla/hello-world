@@ -4,7 +4,7 @@ import Container from "../Container";
 
 function WhoWeAre() {
   return (
-    <div className="bg-secondary">
+    <div className="bg-E5E8EB">
       <Container>
         <div className="text-white">
           <div className="relative top-[-100px]">

@@ -47,7 +47,7 @@ function Footer() {
                   return (
                     <Link
                       key={el.id}
-                      to={""}
+                      to={"https://www.linkedin.com/in/the-mustafa-khaled/"}
                       target="_blank">
                       <Icon className="text-2xl hover:text-primary" />
                     </Link>

@@ -29,15 +29,17 @@ function HeroSection() {
       style={{
         backgroundImage: `url(${projectsData[imageIndex].image})`,
         backgroundPosition: "60%",
-      }}>
-      <div className="absolute left-0 top-0 w-full h-full bg-[#00000080]"></div>
+      }}
+    >
+      <div className="absolute left-0 top-0 w-full h-full"></div>
       <section className="h-[calc(100vh-80px)] ">
         <div className="container mx-auto px-[10px]">
           <div className="relative h-[100vh] w-full">
             {/* Content */}
             <div
               className="text-center h-full flex items-center justify-center flex-col
-               w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]">
+               w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]"
+            >
               <p className="sm:text-base text-xs">
                 {projectsData[imageIndex].description}
               </p>
@@ -57,7 +59,8 @@ function HeroSection() {
               className="absolute sm:left-[10px] left-0 top-[50%] translate-y-[-50%] hover:text-gray p-[10px]
                sm:border-l border-[#ccc] hover:translate-x-[-10px]"
               style={{ transition: "all 100ms ease-in-out" }}
-              onClick={showPrevImage}>
+              onClick={showPrevImage}
+            >
               <MdArrowBackIosNew className="text-2xl" />
             </button>
 
@@ -65,7 +68,8 @@ function HeroSection() {
               className="absolute sm:right-[10px] right-0 top-[50%] translate-y-[-50%] hover:text-gray p-[10px]
               sm:border-r border-gray hover:translate-x-[10px]"
               style={{ transition: "all 100ms ease-in-out" }}
-              onClick={showNextImage}>
+              onClick={showNextImage}
+            >
               <MdArrowForwardIos className="text-2xl" />
             </button>
           </div>

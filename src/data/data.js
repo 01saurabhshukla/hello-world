@@ -1,4 +1,4 @@
-import image1 from "../Assets/villa.jpg";
+import image1 from "../Assets/resized_villa.png";
 import image2 from "../Assets/Apartment.jpg";
 import image3 from "../Assets/hotel-apartment.jpg";
 import image4 from "../Assets/commercial-1.jpg";
@@ -78,10 +78,11 @@ import {
 export const projectsData = [
   {
     id: 1,
-    title: "Demo Project",
-    description: "Demo Project Demo Project Demo Project Demo Project Demo Project",
+    title: "Villa",
+    description: "Settle In a Modern Villa With Your Family",
     image: image1,
     to: "/projects/villa",
+    bgColor: "#E5E8EB",
   },
   {
     id: 2,
@@ -89,6 +90,7 @@ export const projectsData = [
     description: "Experience urban living at its finest in our apartments",
     image: image2,
     to: "/projects/apartment",
+    bgColor: "#E5E8EB",
   },
   {
     id: 3,
@@ -96,6 +98,7 @@ export const projectsData = [
     description: "Discover unlimited options and move to the new capital city",
     image: image3,
     to: "/projects/hotelApartment",
+    bgColor: "#E5E8EB",
   },
   {
     id: 4,
@@ -103,6 +106,7 @@ export const projectsData = [
     description: "Open your new store in Egypt's best city",
     image: image4,
     to: "/projects/commercial",
+    bgColor: "#E5E8EB",
   },
   {
     id: 5,
@@ -110,6 +114,7 @@ export const projectsData = [
     description: "Your new office in a modern work environment",
     image: image5,
     to: "/projects/administrative",
+    bgColor: "#E5E8EB",
   },
   {
     id: 6,
@@ -117,6 +122,7 @@ export const projectsData = [
     description: "Medical units available with different facilities",
     image: image6,
     to: "/projects/medical",
+    bgColor: "#E5E8EB",
   },
   {
     id: 7,
@@ -125,6 +131,7 @@ export const projectsData = [
       "Healthcare made easy with pharmacies units with different facilities",
     image: image7,
     to: "/projects/pharmacies",
+    bgColor: "#E5E8EB",
   },
   {
     id: 8,
@@ -133,6 +140,7 @@ export const projectsData = [
       "Experience the allure of a vibrant community in the heart of New Cairo",
     image: image8,
     to: "/projects/newCairo",
+    bgColor: "#E5E8EB",
   },
 ];
 
@@ -176,7 +184,7 @@ export const aboutUsData = [
     image: experienceIcon,
     description:
       "Based on our extensive experience and resources, we provide sincere consultancy you can depend on to help you with your investment and property buying decisions.",
-    bgColor: "#222222",
+    bgColor: "#E5E8EB",
   },
   {
     id: 2,
@@ -184,7 +192,7 @@ export const aboutUsData = [
     image: trustIcon,
     description:
       "We have built a reputation through meaningful communication and honesty with our clients. We are trusted to fulfill promises and take care of our clients’ concerns.",
-    bgColor: "#141414",
+    bgColor: "#E5E8EB",
   },
 
   {
@@ -193,7 +201,7 @@ export const aboutUsData = [
     image: varietyIcon,
     description:
       "We specialize in various projects that offer all types of units such as apartments, penthouses, villas, commercial, administrative, and medical units.",
-    bgColor: "#222222",
+    bgColor: "#E5E8EB",
   },
 ];
 
@@ -234,9 +242,9 @@ export const formData = [
 ];
 
 export const contactInfoData = [
-  { id: 1, title: "+91 9898989898", image: phone },
-  { id: 2, title: "humara@gmail.com", image: email },
-  { id: 3, title: "Mumbai, India", image: location },
+  { id: 1, title: "+20 1151747091", image: phone },
+  { id: 2, title: "mustafakhaledinfo@gmail.com", image: email },
+  { id: 3, title: "Cairo, Egypt", image: location },
 ];
 
 export const villaData = [

@@ -78,9 +78,9 @@ function Single() {
                   data-aos="fade-up"
                   data-aos-duration="3000"
                   key={el.id}
-                  className="relative mx-auto bg-[#262626] transition-all">
+                  className="relative mx-auto bg-[#E5E8EB ] transition-all">
                   <div
-                    className="absolute top-[20px] left-[50%] translate-x-[-50%] bg-[#262626] flex items-center 
+                    className="absolute top-[20px] left-[50%] bg-[#E5E8EB ] translate-x-[-50%] flex items-center 
                   w-[75%] sm:text-sm text-xs">
                     <p className="bg-primary p-[5px] w-[50%] text-center">
                       unit Price

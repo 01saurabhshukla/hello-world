@@ -19,7 +19,8 @@ function Projects() {
                   data-aos="fade-up"
                   data-aos-duration="3000"
                   key={p.id}
-                  className="bg-[#262626] hover:bg-[#333333] md:w-[calc(50%-20px)] w-full md:min-h-[500px] min-h-[400px]">
+                  className="bg-[#E5E8EB] hover:bg-[#CBD5E1] md:w-[calc(50%-20px)] w-full md:min-h-[500px] min-h-[400px] transition-all duration-300 shadow-md hover:shadow-xl"
+                >
                   <img
                     src={p.image}
                     alt={p.description}

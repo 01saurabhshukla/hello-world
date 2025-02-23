@@ -38,11 +38,10 @@ function Header() {
 
   return (
     <header
-      className={`h-[80px] text-white w-full fixed z-50 flex items-center ${
-        !isScrolled && "border-b"
-      }  border-[#b9bbbd] ${
+      className={`h-[80px] text-white w-full fixed z-50 flex items-center ${!isScrolled}  ${
         isScrolled || isActive ? "bg-secondary" : "md:bg-transparent"
-      }`}>
+      }`}
+    >
       <div className="container relative mx-auto px-[20px] flex items-center justify-between">
         <div>
           <Link to={"/"}>
@@ -53,14 +52,16 @@ function Header() {
           className={`header-links flex items-center justify-center md:flex-row flex-col gap-[40px] uppercase bg-secondary
          md:bg-transparent md:static fixed top-[80px] md:h-auto h-[calc(100vh-80px)] md:w-auto ${
            isActive ? "w-full right-0" : "right-[-400px]"
-         } z-50`}>
+         } z-50`}
+        >
           {headerData.map((l) => {
             return (
               <li key={l.id}>
                 <NavLink
                   to={l.to}
                   onClick={handleCloseHeader}
-                  className="relative hover:text-primary transition-all ease-in-out">
+                  className="relative hover:text-primary transition-all ease-in-out"
+                >
                   {l.title}
                 </NavLink>
               </li>
