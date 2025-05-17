@@ -56,25 +56,7 @@ function Header() {
         >
           {headerData.map((l) => {
             return (
-              <li key={l.id}>
-                {l.title === "Projects" ? (
-                  <NavLink
-                    onClick={() => {
-                      handleCloseHeader();
-                      const section = document.getElementById(l.to);
-                      if (section) {
-                        const yOffset = -40; // 40px less
-                        const y =
-                              section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-                        window.scrollTo({ top: y, behavior: "smooth" });
-                      }
-                    }}
-                    className="relative hover:text-primary transition-all ease-in-out uppercase"
-                  >
-                    {l.title}
-                  </NavLink>
-                ) : (
+              <li key={l.id} style={{color: isScrolled ? '#2E3A47' : 'white'}}>
                   <NavLink
                     to={l.to}
                     onClick={() => {
@@ -84,7 +66,6 @@ function Header() {
                   >
                     {l.title}
                   </NavLink>
-                )}
               </li>
             );
           })}

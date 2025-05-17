@@ -36,6 +36,9 @@ button {
   display: block;
   right: 0;
 }
+.main-btn {
+  background-color: white;
+}
 .text-gray {
   color: #2E3A47;
 }

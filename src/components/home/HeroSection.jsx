@@ -1,30 +1,14 @@
-import { useState } from "react";
-import { projectsData } from "../../data/data";
-import { MdArrowForwardIos } from "react-icons/md";
-import { MdArrowBackIosNew } from "react-icons/md";
+import mainImage from "../../Assets/mainImage_1.png"
+import { Link } from 'react-router-dom';
+import Button from "../Button";
+
 
 function HeroSection() {
-  const [imageIndex, setImageIndex] = useState(0);
-
-  const showNextImage = () => {
-    setImageIndex((index) => {
-      if (index === projectsData.length - 1) return 0;
-      return index + 1;
-    });
-  };
-
-  const showPrevImage = () => {
-    setImageIndex((index) => {
-      if (index === 0) return projectsData.length - 1;
-      return index - 1;
-    });
-  };
-
   return (
     <div
       className="bg-cover min-h-screen text-white relative"
       style={{
-        backgroundImage: `url(${projectsData[imageIndex].image})`,
+        backgroundImage: `url(${mainImage})`,
         backgroundPosition: "60%",
         backgroundSize: "100% 100%",
       }}
@@ -38,38 +22,37 @@ function HeroSection() {
               className="text-center h-full flex items-center justify-center flex-col
                w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]"
             >
-              <p className="sm:text-2xl text-xs" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}>
-                {projectsData[imageIndex].description}
-              </p>
-              <h2 className="md:text-7xl sm:text-4xl text-lg  font-bold" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}>
-                {projectsData[imageIndex].title}
+              {/* <h2 className="md:text-7xl sm:text-4xl text-lg  font-bold" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}>
+                NK CONSTRUCTION
+              </h2> */}
+              <h2
+                className="md:text-7xl sm:text-4xl text-lg font-bold"
+                style={{
+                  color: 'white',
+                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+                  letterSpacing: '0.05em',
+                  borderLeft: '8px solid #F4A100', // Orange vertical bar
+                  paddingLeft: '0.2em',
+                }}
+              >
+                NK CONSTRUCTION
               </h2>
               <div>
-                {/* <Link to={"/projects"}>
-                  <Button>See Projects</Button>
-                </Link> */}
+                <Link
+                  onClick={() => {
+                    const section = document.getElementById("projects-section");
+                    if (section) {
+                      const yOffset = -40; // 40px less
+                      const y =
+                        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                      window.scrollTo({ top: y, behavior: "smooth" });
+                    }
+                  }}>
+                  <Button>SEE PROJECTS</Button>
+                </Link>
               </div>
             </div>
-
-            {/* Next and prev buttons */}
-
-            <button
-              className="absolute sm:left-[10px] left-0 top-[50%] translate-y-[-50%] hover:text-gray p-[10px]
-               sm:border-l border-[#ccc] hover:translate-x-[-10px] text-white"
-              style={{ transition: "all 100ms ease-in-out", color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)' }}
-              onClick={showPrevImage}
-            >
-              <MdArrowBackIosNew className="text-2xl text-white" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}/>
-            </button>
-
-            <button
-              className="absolute sm:right-[10px] right-0 top-[50%] translate-y-[-50%] hover:text-gray p-[10px]
-              sm:border-r border-gray hover:translate-x-[10px] text-white"
-              style={{ transition: "all 100ms ease-in-out", color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)' }}
-              onClick={showNextImage}
-            >
-              <MdArrowForwardIos className="text-2xl text-white" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}/>
-            </button>
           </div>
         </div>
       </section>

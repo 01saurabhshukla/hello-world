@@ -197,7 +197,6 @@ export const projectsData = [
 
 export const headerData = [
   { id: 1, title: "Home", to: "/" },
-  { id: 2, title: "Projects", to: "projects-section" },
   { id: 3, title: "About", to: "/about" },
   { id: 4, title: "Contact", to: "/contact" },
 ];
