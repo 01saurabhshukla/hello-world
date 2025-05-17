@@ -75,78 +75,129 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
+// export const projectsData = [
+//   {
+//     id: 1,
+//     title: "Villa",
+//     description: "Settle In a Modern Villa With Your Family",
+//     image: image1,
+//     to: "/projects/villa",
+//     bgColor: "#E5E8EB",
+//   },
+//   {
+//     id: 2,
+//     title: "Apartment",
+//     description: "Experience urban living at its finest in our apartments",
+//     image: image2,
+//     to: "/projects/apartment",
+//     bgColor: "#E5E8EB",
+//   },
+//   {
+//     id: 3,
+//     title: "Hotel Apartment",
+//     description: "Discover unlimited options and move to the new capital city",
+//     image: image3,
+//     to: "/projects/hotelApartment",
+//     bgColor: "#E5E8EB",
+//   },
+//   {
+//     id: 4,
+//     title: "Commercial",
+//     description: "Open your new store in Egypt's best city",
+//     image: image4,
+//     to: "/projects/commercial",
+//     bgColor: "#E5E8EB",
+//   },
+//   {
+//     id: 5,
+//     title: "Administrative",
+//     description: "Your new office in a modern work environment",
+//     image: image5,
+//     to: "/projects/administrative",
+//     bgColor: "#E5E8EB",
+//   },
+//   {
+//     id: 6,
+//     title: "Medical",
+//     description: "Medical units available with different facilities",
+//     image: image6,
+//     to: "/projects/medical",
+//     bgColor: "#E5E8EB",
+//   },
+//   {
+//     id: 7,
+//     title: "Pharmacies",
+//     description:
+//       "Healthcare made easy with pharmacies units with different facilities",
+//     image: image7,
+//     to: "/projects/pharmacies",
+//     bgColor: "#E5E8EB",
+//   },
+//   {
+//     id: 8,
+//     title: "New Cairo",
+//     description:
+//       "Experience the allure of a vibrant community in the heart of New Cairo",
+//     image: image8,
+//     to: "/projects/newCairo",
+//     bgColor: "#E5E8EB",
+//   },
+// ];
+
+import project1 from "../Assets/blueprint/project_1.png"
+import blueprint1 from "../Assets/blueprint/blueprint_1.png"
+
+import project2 from "../Assets/blueprint/project_2.png"
+import blueprint2 from "../Assets/blueprint/blueprint_2.png"
+
+import project3 from "../Assets/blueprint/project_3.png"
+import blueprint3 from "../Assets/blueprint/blueprint_3.png"
+
+import project4 from "../Assets/blueprint/project_4.png"
+
 export const projectsData = [
   {
     id: 1,
-    title: "Villa",
-    description: "Settle In a Modern Villa With Your Family",
-    image: image1,
+    title: "Project 1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum.",
+    blueprint_image: blueprint1,
+    image: project1,
     to: "/projects/villa",
     bgColor: "#E5E8EB",
   },
   {
     id: 2,
-    title: "Apartment",
-    description: "Experience urban living at its finest in our apartments",
-    image: image2,
-    to: "/projects/apartment",
+    title: "Project 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum.",
+    blueprint_image: blueprint2,
+    image: project2,
+    to: "/projects/villa",
     bgColor: "#E5E8EB",
   },
   {
     id: 3,
-    title: "Hotel Apartment",
-    description: "Discover unlimited options and move to the new capital city",
-    image: image3,
-    to: "/projects/hotelApartment",
+    title: "Project 3",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum.",
+    blueprint_image: blueprint3,
+    image: project3,
+    to: "/projects/villa",
     bgColor: "#E5E8EB",
   },
   {
     id: 4,
-    title: "Commercial",
-    description: "Open your new store in Egypt's best city",
-    image: image4,
-    to: "/projects/commercial",
+    title: "Project 4",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum.",
+    blueprint_image: blueprint1,
+    image: project4,
+    to: "/projects/villa",
     bgColor: "#E5E8EB",
   },
-  {
-    id: 5,
-    title: "Administrative",
-    description: "Your new office in a modern work environment",
-    image: image5,
-    to: "/projects/administrative",
-    bgColor: "#E5E8EB",
-  },
-  {
-    id: 6,
-    title: "Medical",
-    description: "Medical units available with different facilities",
-    image: image6,
-    to: "/projects/medical",
-    bgColor: "#E5E8EB",
-  },
-  {
-    id: 7,
-    title: "Pharmacies",
-    description:
-      "Healthcare made easy with pharmacies units with different facilities",
-    image: image7,
-    to: "/projects/pharmacies",
-    bgColor: "#E5E8EB",
-  },
-  {
-    id: 8,
-    title: "New Cairo",
-    description:
-      "Experience the allure of a vibrant community in the heart of New Cairo",
-    image: image8,
-    to: "/projects/newCairo",
-    bgColor: "#E5E8EB",
-  },
+  
 ];
 
 export const headerData = [
   { id: 1, title: "Home", to: "/" },
-  { id: 2, title: "Projects", to: "/projects" },
+  { id: 2, title: "Projects", to: "projects-section" },
   { id: 3, title: "About", to: "/about" },
   { id: 4, title: "Contact", to: "/contact" },
 ];

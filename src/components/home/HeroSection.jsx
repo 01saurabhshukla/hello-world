@@ -3,9 +3,6 @@ import { projectsData } from "../../data/data";
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIosNew } from "react-icons/md";
 
-import Button from "../Button";
-import { Link } from "react-router-dom";
-
 function HeroSection() {
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -29,6 +26,7 @@ function HeroSection() {
       style={{
         backgroundImage: `url(${projectsData[imageIndex].image})`,
         backgroundPosition: "60%",
+        backgroundSize: "100% 100%",
       }}
     >
       <div className="absolute left-0 top-0 w-full h-full"></div>
@@ -40,16 +38,16 @@ function HeroSection() {
               className="text-center h-full flex items-center justify-center flex-col
                w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]"
             >
-              <p className="sm:text-base text-xs">
+              <p className="sm:text-2xl text-xs" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}>
                 {projectsData[imageIndex].description}
               </p>
-              <h2 className="md:text-7xl sm:text-4xl text-lg  font-bold">
+              <h2 className="md:text-7xl sm:text-4xl text-lg  font-bold" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}>
                 {projectsData[imageIndex].title}
               </h2>
               <div>
-                <Link to={"/projects"}>
+                {/* <Link to={"/projects"}>
                   <Button>See Projects</Button>
-                </Link>
+                </Link> */}
               </div>
             </div>
 
@@ -57,20 +55,20 @@ function HeroSection() {
 
             <button
               className="absolute sm:left-[10px] left-0 top-[50%] translate-y-[-50%] hover:text-gray p-[10px]
-               sm:border-l border-[#ccc] hover:translate-x-[-10px]"
-              style={{ transition: "all 100ms ease-in-out" }}
+               sm:border-l border-[#ccc] hover:translate-x-[-10px] text-white"
+              style={{ transition: "all 100ms ease-in-out", color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)' }}
               onClick={showPrevImage}
             >
-              <MdArrowBackIosNew className="text-2xl" />
+              <MdArrowBackIosNew className="text-2xl text-white" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}/>
             </button>
 
             <button
               className="absolute sm:right-[10px] right-0 top-[50%] translate-y-[-50%] hover:text-gray p-[10px]
-              sm:border-r border-gray hover:translate-x-[10px]"
-              style={{ transition: "all 100ms ease-in-out" }}
+              sm:border-r border-gray hover:translate-x-[10px] text-white"
+              style={{ transition: "all 100ms ease-in-out", color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)' }}
               onClick={showNextImage}
             >
-              <MdArrowForwardIos className="text-2xl" />
+              <MdArrowForwardIos className="text-2xl text-white" style={{color: 'white',textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)'}}/>
             </button>
           </div>
         </div>

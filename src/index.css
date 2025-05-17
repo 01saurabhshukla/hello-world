@@ -39,3 +39,31 @@ button {
 .text-gray {
   color: #2E3A47;
 }
+
+/* If you're using regular CSS, adapt these styles */
+.modal-content {
+  padding: 20px 0;
+}
+
+.modal-title {
+  /* font-family: your-construction-font, sans-serif; */ /* Consider a strong, clear font */
+  color: #374151; /* Dark gray */
+}
+
+.modal-description {
+  line-height: 1.75;
+}
+
+.modal-button {
+  /* font-family: your-accent-font, sans-serif; */ /* Maybe a slightly bolder version */
+  background-color: #1e3a8a; /* A strong blue often associated with trust and stability */
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.modal-button:hover {
+  background-color: #172554; /* Darker shade on hover */
+}
